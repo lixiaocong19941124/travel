@@ -1,0 +1,1627 @@
+@CHARSET "UTF-8";
+html,body,header,section,footer,div,ul,ol,li,img,a,span,em,del,legend,center,strong,var,fieldset,form,label,dl,dt,dd,cite,input,hr,time,mark,code,figcaption,figure,textarea,h1,h2,h3,h4,h5,h6,p{
+    margin:0;
+    border:0;
+    padding:0;
+    font-style:normal;
+    font:.90em/1.4 "微软雅黑","Microsoft Yahei",'Arial','san-serif';
+}
+ul,li{
+	list-style:none
+}
+a{
+    text-decoration: none;
+}
+a:focus{
+	outline:none
+}
+
+.animated{
+	-webkit-animation-duration:1.4s;
+	animation-duration:1.4s;
+	-webkit-animation-fill-mode:both;
+	animation-fill-mode:both
+}
+
+@-webkit-keyframes bounceIn{
+	0%{
+	opacity:0;
+	-webkit-transform:scale(.3);
+	transform:scale(.3)
+}
+50%{
+	opacity:1;
+	-webkit-transform:scale(1.05);
+	transform:scale(1.05)
+}
+70%{
+	-webkit-transform:scale(.9);
+	transform:scale(.9)
+}
+100%{
+	opacity:1;
+	-webkit-transform:scale(1);
+	transform:scale(1)
+}
+
+}
+@keyframes bounceIn{
+	0%{
+	opacity:0;
+	-webkit-transform:scale(.3);
+	-ms-transform:scale(.3);
+	transform:scale(.3)
+}
+50%{
+	opacity:1;
+	-webkit-transform:scale(1.05);
+	-ms-transform:scale(1.05);
+	transform:scale(1.05)
+}
+70%{
+	-webkit-transform:scale(.9);
+	-ms-transform:scale(.9);
+	transform:scale(.9)
+}
+100%{
+	opacity:1;
+	-webkit-transform:scale(1);
+	-ms-transform:scale(1);
+	transform:scale(1)
+}
+
+}
+.bounceIn{
+	-webkit-animation-name:bounceIn;
+	animation-name:bounceIn
+}
+
+@-webkit-keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+    transform: translateY(-2000px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+    -ms-transform: translateY(-2000px);
+    transform: translateY(-2000px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.bounceInDown {
+  -webkit-animation-name: bounceInDown;
+  animation-name: bounceInDown;
+}
+
+@-webkit-keyframes bounceOutUp {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  20% {
+    opacity: 1;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+    transform: translateY(-2000px);
+  }
+}
+
+@keyframes bounceOutUp {
+  0% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  20% {
+    opacity: 1;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+    -ms-transform: translateY(-2000px);
+    transform: translateY(-2000px);
+  }
+}
+
+.bounceOutUp {
+  -webkit-animation-name: bounceOutUp;
+  animation-name: bounceOutUp;
+}
+
+@-webkit-keyframes rollIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%) rotate(-120deg);
+    transform: translateX(-100%) rotate(-120deg);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px) rotate(0deg);
+    transform: translateX(0px) rotate(0deg);
+  }
+}
+
+@keyframes rollIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%) rotate(-120deg);
+    -ms-transform: translateX(-100%) rotate(-120deg);
+    transform: translateX(-100%) rotate(-120deg);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px) rotate(0deg);
+    -ms-transform: translateX(0px) rotate(0deg);
+    transform: translateX(0px) rotate(0deg);
+  }
+}
+
+.rollIn {
+  -webkit-animation-name: rollIn;
+  animation-name: rollIn;
+}
+
+
+@-webkit-keyframes flipInX {
+  0% {
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotateX(-10deg);
+    transform: perspective(400px) rotateX(-10deg);
+  }
+
+  70% {
+    -webkit-transform: perspective(400px) rotateX(10deg);
+    transform: perspective(400px) rotateX(10deg);
+  }
+
+  100% {
+    -webkit-transform: perspective(400px) rotateX(0deg);
+    transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes flipInX {
+  0% {
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    -ms-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotateX(-10deg);
+    -ms-transform: perspective(400px) rotateX(-10deg);
+    transform: perspective(400px) rotateX(-10deg);
+  }
+
+  70% {
+    -webkit-transform: perspective(400px) rotateX(10deg);
+    -ms-transform: perspective(400px) rotateX(10deg);
+    transform: perspective(400px) rotateX(10deg);
+  }
+
+  100% {
+    -webkit-transform: perspective(400px) rotateX(0deg);
+    -ms-transform: perspective(400px) rotateX(0deg);
+    transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+.flipInX {
+  -webkit-backface-visibility: visible !important;
+  -ms-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: flipInX;
+  animation-name: flipInX;
+}
+
+/*------------------- 华丽分割线 -----------------------*/
+
+header{width:90%;text-align:center;padding:5%;letter-spacing:2px;color:#333;font-size:1.2em;text-shadow:0 0 2px #999;}
+/*.demo{width:100%;margin:0 auto;text-align:center;}*/
+/*.demo a{margin:0 5px 20px;background-color:#eee;}*/
+
+/*------------------- 华丽分割线 -----------------------*/
+#dialog{ width: 300px; height: 240px; margin: 0 auto; display: none; background-color: #ffffff; position: fixed; top: 50%; left: 50%; margin: -120px 0 0 -150px; z-index: 10000; border: 1px solid #ccc; border-radius: 10px; -webkit-border-radius: 10px; box-shadow: 3px 2px 4px rgba(0,0,0,0.2); -webkit-box-shadow: 3px 2px 4px rgba(0,0,0,0.2); }
+#da{width:100%;height:100%;background-color:#000000;opacity:.8;filter:alpha(opacity=60);position:fixed;top:0;left:0;z-index:9999;display:none;}
+
+#dialogBg{width:100%;height:100%;background-color:#000000;opacity:.8;filter:alpha(opacity=60);position:fixed;top:0;left:0;z-index:9999;display:none;}
+#dial{ width: 300px; height: 240px; margin: 0 auto; display: none; background-color: #ffffff; position: fixed; top: 50%; left: 50%; margin: -120px 0 0 -150px; z-index: 10000; border: 1px solid #ccc; border-radius: 10px; -webkit-border-radius: 10px; box-shadow: 3px 2px 4px rgba(0,0,0,0.2); -webkit-box-shadow: 3px 2px 4px rgba(0,0,0,0.2); }
+.dialogTop{width:90%;margin:0 auto;border-bottom:1px dotted #ccc;letter-spacing:1px;padding:10px 0;text-align:right;}
+.dialogIco{width:50px;height:50px;position:absolute;top:-25px;left:50%;margin-left:-25px;}
+.editInfos{padding:15px 0;}
+.editInfos li{width:90%;margin:8px auto auto;text-align: center;}
+.ipt{border:1px solid #ccc;padding:5px;border-radius:3px;-webkit-border-radius:3px;box-shadow:0 0 3px #ccc inset;-webkit-box-shadow:0 0 3px #ccc inset;margin-left:5px;}
+.ipt:focus{outline:none;border-color:#66afe9;box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);-webkit-box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);}
+.submitBtn{width:90px;height:30px;line-height:30px;font-family:"微软雅黑","microsoft yahei";cursor:pointer;margin-top:10px;display:inline-block;border-radius:5px;-webkit-border-radius:5px;text-align:center;background-color:#428bca;color:#fff;box-shadow: 0 -3px 0 #2a6496 inset;-webkit-box-shadow: 0 -3px 0 #2a6496 inset;}
+
+#dlogBg{width:100%;height:100%;background-color:#000000;opacity:.8;filter:alpha(opacity=60);position:fixed;top:0;left:0;z-index:9999;display:none;}
+#dig{ width: 300px; height: 240px; margin: 0 auto; display: none; background-color: #ffffff; position: fixed; top: 50%; left: 50%; margin: -120px 0 0 -150px; z-index: 10000; border: 1px solid #ccc; border-radius: 10px; -webkit-border-radius: 10px; box-shadow: 3px 2px 4px rgba(0,0,0,0.2); -webkit-box-shadow: 3px 2px 4px rgba(0,0,0,0.2); }
+
+
+
+
+
+
+#fullpage2{
+            background-color:white;
+        }
+
+
+/* index */
+        body{
+            background-color: rgb(51, 51, 51);
+        }
+        /* Let's get this party started */
+        ::-webkit-scrollbar {
+            width: 12px;
+            height: 8px;
+            background: transparent;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            background: transparent;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            background: rgba(87, 87, 87, 0.5);
+        }
+        ::-webkit-scrollbar-thumb:window-inactive {
+            background: rgba(87, 87, 87, 0.5);
+        }
+         .tv_body{
+             margin: 0;min-width: 900px;min-height: 600px;
+         }
+        /*Hearder css*/
+        .head{
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgb(51, 51, 51);
+            height: 80px;
+            width: 100%
+        }
+        /*footer css*/
+        .clear:after{
+            content: "";
+            height: 0;
+            display: block;
+            visibility: hidden;
+            clear: both;
+        }
+        .fot{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            background-color: rgb(51, 51, 51);
+            height: 80px;
+            width: 100%;
+            text-align: center;
+        }
+        /*login css*/
+        .content{
+            position: absolute;
+            top: 80px;
+            width: 100%;
+            bottom: 80px;
+        }
+        .content-next{
+            margin: 0 100px;
+            width: auto;
+            height: 100%;
+            overflow: hidden;
+        }
+        /*join us*/
+        .joinus{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100px;
+            align-items: flex-end;
+            display: flex;
+            justify-content: center;
+        }
+        /* Style for our header texts
+        * --------------------------------------- */
+        h1 {
+            font-size: 5em;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        .intro p {
+            color: #fff;
+        }
+        /* Centered texts in each section
+        * --------------------------------------- */
+        .section {
+            text-align: center;
+            width: 100%;
+        }
+        /* Bottom menu
+        * --------------------------------------- */
+        #infoMenu {
+            bottom: 80px;
+        }
+
+        #infoMenu li a {
+            color: #fff;
+            z-index: 999;
+        }
+
+        /*样式*/
+        .header-logo {
+            display: flex;
+            align-items: center;
+            height: 80px;
+        }
+
+        .mar-l-20 {
+            margin-left: 20px;
+        }
+
+        .mar-r-20 {
+            margin-right: 40px;
+        }
+
+        .fp-section.fp-table, .fp-slide.fp-table {
+            display: block;
+        }
+
+        /*备案信息样式*/
+        .bah {
+            position: absolute;
+            bottom: 5px;
+            line-height: normal;
+            width: 100%;
+            text-align: center;
+            color: #c6c6c6;
+            font-size: 12px;
+        }
+        .fp-controlArrow{
+            margin-top: -94px;
+        }
+
+        .a-genduo{
+            background-image: none !important;
+            right: auto !important;
+            top: 50%;
+            margin-top: -25px;
+            color: white;
+            font-size: 25px;
+        }
+        /*登录样式*/
+        .log-ys{
+            z-index: 11;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100px;
+        }
+        .right-dlzc{
+            display: flex;
+            flex-wrap:wrap;
+            color: white;
+        }
+        .right-dlzc1{
+            display: flex;
+            flex-wrap:wrap;
+            color: white;
+        }
+        .right-dlzc>div{
+            cursor: pointer;
+            height: 30px;
+            width: 100%;
+            line-height: 30px;
+            display: flex;
+            justify-content: center;
+        }
+        .right-dlzc1>div{
+            cursor: pointer;
+            height: 45px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .fp-tableCell{
+            position: relative;
+            display: block;
+        }
+
+        /*右侧导航样式*/
+        .right-fixed{
+            width: 100px;
+            position: fixed;
+            right: 0;
+            top: 30%;
+        }
+        .right-nav-ys{
+            z-index: 10;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+        .right-nav-ys .abc{
+            width: 100%;
+            height: 40px;
+        }
+        .right-nav-ys .abc>a{
+            display:block;
+            width: 100%;
+            height: 100%;
+            line-height: 40px;
+            text-align: center;
+            color: #ffffff;
+            transition: all 0.5s;
+        }
+        .right-nav-ys .abc a:hover{
+             font-size:23px;
+             color: #cccccc;
+            background: url("../image/left.png") no-repeat left 50%;
+             background-size: 20%;
+             transition: all 0.5s;
+         }
+/*美图滑块的信息介绍快css和动画*/
+        .meitu-xinxi{
+            background-color: rgba(51,51,51,0.5);
+            color: white;
+            position: absolute;
+            bottom: -50px;
+            width: 100%;
+            line-height: 50px;
+            height: 50px;
+            text-align: left;
+            text-indent:1em;
+
+            /*css滑入过渡*/
+            transition:0.5s all ease;
+            -moz-transition:0.5s all ease;
+            -webkit-transition:0.5s all ease;
+            -o-transition:0.5s all ease;
+        }
+        .meitu-xinxi a{
+            width: 50px;
+            height: 50px;
+            float: right;
+        }
+        .meitu-xinxi a:last-child{
+            background-image:url('../image/xiazai.png');
+            background-size: 100% 100%;
+           
+        }
+        .meitu-xinxi a:first-child{
+            margin-right: 0.8rem;
+        }
+        .meitu-trans{
+            background-color: transparent;
+            position: absolute;
+            bottom:0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+        }
+        #section1:hover .meitu-xinxi,#section3 .brick:hover .meitu-xinxi{
+            bottom: 0;
+        }
+        /*大师界面信息介绍样式*/
+        .ds-tans-next{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            opacity: 0;
+            background-color: rgba(255, 255, 255, 0.5);
+            width: 394px;
+            color: white;
+            /*css滑入过渡*/
+            transition:0.8s all ease;
+            -moz-transition:0.8s all ease;
+            -webkit-transition:0.8s all ease;
+            -o-transition:0.8s all ease;
+        }
+        #section2:hover .ds-tans>.ds-tans-next,#section2:hover a{
+            opacity: 1;
+        }
+        /*大师界面下载图标样式*/
+        #section2 a{
+            background-image: url('../image/jinru.png');
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+            /*css滑入过渡*/
+            transition:0.8s all ease;
+            -moz-transition:0.8s all ease;
+            -webkit-transition:0.8s all ease;
+            -o-transition:0.8s all ease;
+        }
+
+        /*活动和周边界面进入详情图标样式*/
+        .jinru a,.jr{
+            background-image: url('../image/jinru.png');
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            cursor: pointer;
+        }
+
+        /*摄影师的显示界面*/
+        .layout {
+            background-color: white;
+            position: absolute;
+            right: 0px;
+            left: 0px;
+            top: 0px;
+            bottom: 0px;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+        .free-wall {
+            height: 100%;
+            margin: auto;
+        }
+        .brick {
+            background-color: white;
+            float: left;
+            cursor: default;
+            overflow: hidden;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .brick1 {
+            background-color: white;
+            float: left;
+            cursor: default;
+            overflow: hidden;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .size20 {
+            width: 160px;
+            height: 320px;
+        }
+
+        .size21 {
+            width: 320px;
+            height: 160px;
+        }
+
+        .size22 {
+            height: 320px;
+            width: 320px;
+        }
+
+        .size23 {
+            width: 160px;
+            height: 480px;
+        }
+
+        .size24 {
+            width: 480px;
+            height: 160px;
+        }
+
+        .size25 {
+            width: 320px;
+            height: 480px;
+        }
+
+        /*页面打开是的loading*/
+        #preloader {
+            background: #FFF;
+            bottom: 0;
+            left: 0;
+            position: fixed;
+            right: 0;
+            top: 0;
+            z-index: 9999;
+        }
+        #status {
+            background-image: url(../image/Preloader_7.gif);
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 200px;
+            left: 50%;
+            margin: -100px 0 0 -100px;
+            position: absolute;
+            top: 50%;
+            width: 200px;
+        }
+
+
+        /*左右样式*/
+        .fp-controlArrow.fp-prev,.fp-controlArrow.fp-next{
+            border-color: transparent !important;
+            border-width: 0 34px 77px 5px;
+        }
+        .fp-controlArrow.fp-next{
+            background: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E") no-repeat;
+            width: 40px;
+            height: 40px;
+            border-style: hidden;
+        }
+        .fp-controlArrow.fp-prev{
+            width: 40px;
+            height: 40px;
+            border-style: hidden;
+            background: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E") no-repeat;
+        }
+        /*.free-wall .brick:last-child>div{*/
+        /*background: rgb(142, 68, 173) !important;*/
+        /*}*/
+
+  /*底部赞助商和合作伙伴*/
+  .footerA{height:34px; line-height: 34px; padding:10px;}
+  .footer_bar{
+      color:#fff;
+  }
+  .footerA ul li{
+      display: inline-block;
+      font-size: 14px;
+  }
+    .footerA ul li a{
+        color: #ffffff;
+    }
+.footerA ul li a:hover{
+    color: #cccccc;
+}
+
+
+/* orbit */
+/* CSS for jQuery Orbit Plugin 1.2.3
+ * www.ZURB.com/playground
+ * Copyright 2010, ZURB
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ 
+ 
+ 
+/* PUT IN YOUR SLIDER ID AND SIZE TO MAKE LOAD BEAUTIFULLY
+   ================================================== */
+#featured {
+	/*width: 940px;*/
+	/*height: 450px;*/
+    width: 100%;
+    height: 100%;
+	background: #000 url('../images/loading.gif') no-repeat center center;
+	overflow: hidden; }
+#featured>img, #featured>div, #featured>a { display: none; }
+.featured {
+    /*width: 940px;*/
+    /*height: 450px;*/
+	width: 100%;
+	height: 100%;
+	background: #000 url('../images/loading.gif') no-repeat center center;
+	overflow: hidden; }
+.featured>img, .featured>div, .featured>a { display: none; }
+
+
+
+
+/* CONTAINER
+   ================================================== */
+
+div.orbit-wrapper {
+    /*width: 1px;*/
+    /*height: 1px;*/
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+div.orbit {
+    /*width: 1px;*/
+    /*height: 1px;*/
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden }
+
+div.orbit>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none; }
+
+div.orbit>a {
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 0; 
+    display: none; }
+
+.orbit>div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+/* Note: If your slider only uses content or anchors, you're going to want to put the width and height declarations on the ".orbit>div" and "div.orbit>a" tags in addition to just the .orbit-wrapper */
+
+
+/* TIMER
+   ================================================== */
+
+div.timer {
+    display: none;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    opacity: .6;
+    cursor: pointer;
+    z-index: 1001; }
+
+span.rotator {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    background: url(../images/rotator-black.png) no-repeat;
+    z-index: 3; }
+
+span.mask {
+    display: block;
+    width: 20px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    overflow: hidden; }
+
+span.rotator.move {
+    left: 0 }
+
+span.mask.move {
+    width: 40px;
+    left: 0;
+    background: url(../images/timer-black.png) repeat 0 0; }
+
+span.pause {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../images/pause-black.png) no-repeat;
+    z-index: 4;
+    opacity: 0; }
+
+span.pause.active {
+    background: url(../images/pause-black.png) no-repeat 0 -40px }
+
+div.timer:hover span.pause,
+span.pause.active {
+    opacity: 1 }
+
+
+/* CAPTIONS
+   ================================================== */
+
+.orbit-caption {
+    display: none;
+    font-family: "HelveticaNeue", "Helvetica-Neue", Helvetica, Arial, sans-serif; }
+
+.orbit-wrapper .orbit-caption {
+    background: #000;
+    background: rgba(0,0,0,.6);
+    z-index: 1000;
+    color: #fff;
+	text-align: center;
+	padding: 7px 0;
+    font-size: 13px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%; }
+
+
+/* DIRECTIONAL NAV
+   ================================================== */
+
+div.slider-nav {
+    display: block }
+
+div.slider-nav span {
+    width: 30px;
+    height: 40px;
+    text-indent: -9999px;
+    position: absolute;
+    z-index: 1000;
+    top: 50%;
+    margin-top: -50px;
+    cursor: pointer; }
+
+div.slider-nav span.right {
+    background: url(../image/r2.png);
+     background-size: 100% 100%;
+    right: 0; }
+
+div.slider-nav span.left {
+    background: url(../image/lef2.png);
+    background-size: 100% 100%;
+    left: 0; }
+
+
+div.slider-nav span.right:hover {
+    background: url(../image/r.png);
+     background-size: 100% 100%;
+    right: 0; }
+
+div.slider-nav span.left:hover {
+    background: url(../image/lef.png);
+    background-size: 100% 100%;
+    left: 0; }
+
+/* BULLET NAV
+   ================================================== */
+
+.orbit-bullets {
+    position: absolute;
+    z-index: 1000;
+    list-style: none;
+    bottom: 10px;
+    left: 50%;
+	margin-left: -50px;
+    padding: 5px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 10px;}
+
+.orbit-bullets li {
+    float: left;
+    margin-left: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #fff;
+    text-indent: -9999px;
+    width: 12px;
+    height: 12px;
+    overflow: hidden; }
+
+.orbit-bullets li.active {
+    background-color: #db192a; }
+    
+.orbit-bullets li.has-thumb {
+    background: none;
+    width: 100px;
+    height: 75px; }
+
+.orbit-bullets li.active.has-thumb {
+    background-position: 0 0;
+    border-top: 2px solid #000; }
+
+
+/* */
+*{
+    margin: 0;padding: 0;background: none;outline: none;box-sizing: border-box;
+}
+.clear:after{
+    content: "";height: 0;display: block;visibility: hidden;clear: both;
+}
+body{
+    font-size:1rem;
+}
+ul{
+    list-style: none;
+}
+
+
+  .with{
+            width: 100%;background: #333333;height: 5rem;
+        }
+        .log{
+            max-width: 1200px;margin: 0 auto;
+        }
+        .log-in{
+            width: 30%;
+            padding: 0.6rem 0;
+            float: left;
+        }
+        .log-r{
+            width: 60%;
+            float: right;
+            padding: 1.4rem 0;
+            cursor: pointer;
+        }
+        .log-r div{
+            float: right;
+            width: 5%;
+            margin-left: 0.4rem;
+        }
+
+
+        
+div{
+    border-radius:0.02rem;
+}
+input{
+    border-radius:0.2rem;
+}
+.box{
+    max-width: 1200px;margin:  0 auto;
+}
+.box-l{
+    width: 50%;float: left;margin-top: 10%;
+}
+.box-r{
+    width: 50%;float: right;margin-top: 2rem;
+}
+.odiv{
+    width: 60%;margin: auto;padding: 0.6rem 0;text-align: center;
+}
+.l-odiv{
+    width: 60%;margin: auto;padding: 0.6rem 0;text-align: center;line-height: 1.6rem;
+}
+.res{
+    width: 30%;margin: auto;padding: 0.4rem 0;text-align: center;border:1px solid #b6b6b6;
+}
+.nav-t{
+    width: 30%;text-align: center;margin: auto;padding: 0.6rem 0;
+}
+.nav-c{
+    width: 30%;text-align: center;margin: auto;padding: 0.4rem 0;border: 1px solid #b9b9bb;margin-top: 0.6rem;
+}
+.btn{
+    width: 50%;margin: auto;
+}
+.btn input{
+    width: 100%;border: 1px solid #b9b9bb;padding: 0.6rem;text-indent: 2rem;margin-top:1rem;
+}
+.img{
+    width: 60%;margin: auto;margin-top: 1rem;
+}
+.oimg{
+    width: 10%;float: left;margin-left:12%;
+}
+.otext{
+    width: 70%;float: left;line-height:2rem;margin-left:4%;text-indent: 3rem
+}
+ #dia{
+     position: absolute;width: 50px;height: 40px;background: #333;text-align: center;
+     top: 0;right: -55px;color:white;padding: 10px 0
+ }
+  #cloe{
+     position: absolute;width: 50px;height: 40px;background: #333;text-align: center;
+     top: 0;right: -55px;color:white;padding: 10px 0
+ }
+
+
+/* --------- */
+li{
+   list-style: none !important;
+}
+
+[v-clock]{
+   display: none;
+}
+.fl-left{
+   float: left !important;
+}
+.fl-right{
+   float: right !important;
+}
+.fl-right>div{
+    height: 80px;
+    line-height: 80px;
+    margin: 0 10px;
+    text-align: center;
+}
+/**/
+.ocont{
+    width: 2.6rem;
+    border-bottom: 2px solid transparent;
+    transition: .5s all;
+    position: relative;
+}
+.bor{
+    width: 0;
+    border: 2px solid transparent;
+    margin: auto;
+    transition: .5s all;
+}
+.ocont:hover .bor{
+    width:100%;
+    border:  2px solid #e6d3ba;
+    transition: .5s all;
+}
+/**/
+.ocon{
+    width: 100%;
+    height: 95%;
+    background: url(../image/ssuo.png) no-repeat center;
+    background-size: 60%;
+     transition: .5s all;
+}
+
+.ocon:hover{
+    background-image: url(../image/ssuo2.png);
+    transition: .5s all;
+}
+
+/**/
+.acon{
+    width: 100%;
+    height: 95%;
+    background: url(../image/phop.png) no-repeat center;
+    background-size: 60%;
+    transition: .5s all;
+}
+
+
+.acon:hover{
+ background-image: url(../image/poer.png);
+  transition: .5s all;
+}
+
+.con{
+    width: 100%;
+    height: 95%;
+    background: url(../image/gneng.png)no-repeat center;
+    background-size: 60%;
+    transition: .5s all;
+}
+.onc{
+    width: 100%;
+    height: 95%;
+    background:url(../image/gneng2.png)no-repeat center;
+    background-size: 60%;
+    transition: .5s all;
+
+}
+.con-info{
+    position: absolute;
+    top:100%;
+    right: -1rem;
+    width: 4rem;
+    z-index: 999;
+    background:#eae6e8;
+    display: none;
+
+}
+
+.con:hover{
+    background:url(../image/gneng2.png)no-repeat center;
+    background-size: 60%;
+    transition: .5s all;
+}
+
+.ocont:hover .con-info{
+    display: block;
+}
+
+.con-info li a{
+    display: block;
+    /*line-height: 1rem;*/
+    text-align: center;
+    width: 100%;
+    padding:10px 0;
+    z-index: 9;
+    color: #666666;
+}
+.con-info li a:hover{
+    color: #ffffff;
+}
+
+.con-info li:last-child{
+    border: none;
+}
+.con-info li:hover{
+    background: #999;
+}
+
+.header{
+   position: fixed;
+   height: 90px;
+   width: 100%;
+   top: 0;
+   line-height: 90px;
+   z-index: 11;
+}
+.footer{
+   position: fixed;
+   height: 90px;
+   width: 100%;
+   bottom: 0;
+   line-height: 90px;
+   text-align: center;
+}
+.tx-cl-white{
+   color: white !important;
+}
+.ckxq,.ljgm{
+   vertical-align: middle;
+   padding: 10px 15px;
+   display: inline-block;
+   color: white;
+   cursor: pointer;
+}
+.biaoqian{
+   display: inline-block;
+   padding: 5px 8px;
+   border: 1px solid lightgray;
+   color: #939393;
+   margin-right: 5px;
+   margin-bottom: 5px;
+}
+.col-black{
+   color: black !important;
+}
+/*头部最大最小宽度*/
+.head-max-min{
+   max-width: 1200px;
+   min-width: 990px;
+   margin: 0 auto;
+}
+/*顶部头像的导航条*/
+.toubulog{
+   max-width: 1200px;
+   min-width: 990px;
+   height: 200px;
+   margin: 0 auto;
+}
+
+#leftnav,#rightnav{
+   position: absolute;
+   top: 50%;
+   margin-top: -62.5px;
+   display: inline-block;
+   cursor: pointer;
+   height: 65px;
+   width: 40px;
+   background-repeat: no-repeat;
+   background-image: url(../image/imgs-grid-icons.png);
+}
+
+#leftnav{
+   background-position: 2px center;
+   left: 10px;
+}
+#rightnav{
+   background-position: -42px center;
+   right: 10px;
+}
+
+/*meitu*/
+/* *{
+    margin: 0;padding: 0;background: none;outline: none;box-sizing: border-box;
+} */
+.clear:after{
+    content: "";height: 0;display: block;visibility: hidden;clear: both;
+}
+
+.with{
+    width: 100%;background: #333333;height: 5rem;
+}
+.log{
+    max-width: 1200px;margin: 0 auto;
+}
+.log-in{
+    width: 30%;
+    padding: 0.6rem 0;
+    float: left;
+}
+.log-r{
+    width: 60%;
+    float: right;
+    padding: 1.4rem 0;
+    cursor: pointer;
+}
+.log-r div{
+    float: right;
+    width: 5%;
+    margin-left: 0.4rem;
+}
+ul{
+    list-style: none;
+}
+.boox{
+    width: 100%;
+}
+.box-info{
+    width: 80%;margin: 0 auto;margin-top:1rem;
+}
+.sr-info{
+    width: 100%;margin-top: 0.6rem;
+}
+.sr-info li{
+    width: 15%;float: left;margin-left: 0.5rem;
+}
+.i-like{
+    width: 50%;float: left;
+}
+.mg{
+    width: 20%;float: left;margin-top: 0.3rem;text-align: center;
+}
+.cnt{
+    float: left;padding: 0.2rem 0;margin-left: 0.4rem;
+}
+.wp{
+    width: 100%;
+}
+.tex{
+    width: 50%;float: right;text-align: right;padding: 0.2rem 0;
+}
+.pic{
+
+}
+ .y-ul li{
+       float: left;
+   }
+    .t-img{
+        width: 100%;height: 100%;position: relative
+    }
+
+/* loging.php */
+    .clear:after{
+        content: "";height: 0;display: block;visibility: hidden;clear: both;
+    }
+    ul{
+        list-style: none;
+    }
+    .winn{
+        width: 100%;position: relative;
+    }
+    .obox{
+        width: 50%;position: absolute;top:16rem;
+        left: 25%;
+    }
+    .obox div:first-child{
+        width: 40%;margin: auto;text-align: center;
+    }
+    .obox div:last-child{
+        width: 20%;margin: auto;text-align: center;border: 1px solid #d6d6d6;padding: 0.6rem 0;
+    }
+    .oinp{
+        width: 40%;margin: auto;text-align: center;
+    }
+    .oinp input{width: 80%;
+        background: none;border: 1px solid #d8d8d8;padding: 0.6rem;margin: 2rem 0;
+    }
+    #clo{color: whitesmoke;cursor: pointer;
+        padding: 0.4rem 0.8rem;background: #999;position: absolute;top: 10px;right: 20%;font-size:1.2rem;
+    }
+    .ait{
+        width: 50%;text-align: center;margin: auto;padding: 0.4rem 0;margin-top: 0.6rem;
+    }
+    .otf{
+        width: 80%;margin: auto;
+    }
+    .anum{
+        width: 36%;margin: auto;text-align: center;padding: 0.6rem 0;margin-top: 0.6rem;
+    }
+    .close_login{
+        font-size: 40px;
+        padding: 5px 25px 0 0;
+        text-align: right;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1111;
+        cursor: pointer;
+    }
+/* reg.php */
+    .login{
+        width: 100%;height: 100%;position: relative;
+        overflow-y: auto;
+    }
+    .clear:after{
+        content: "";height: 0;display: block;visibility: hidden;clear: both;
+    }
+    ul{
+        list-style: none;
+    }
+    .winn{
+        width: 100%;position: relative;
+    }
+    .obox{
+        width: 50%;position: absolute;top:16rem;
+        left: 25%;
+    }
+    .obox div:first-child{
+        width: 40%;margin: auto;text-align: center;
+    }
+    .obox div:last-child{
+        width: 20%;margin: auto;text-align: center;border: 1px solid #d6d6d6;padding: 0.6rem 0;
+    }
+    .oinp{
+        text-align: center;
+        width: 100%;
+        padding: 10px 15px;
+        line-height: 21px;
+        background-color: #fff;
+        border: 1px solid rgba(0, 0, 0, .2);
+        border-radius: 3px;
+        outline: none;
+        font-size: 0.6rem;
+    }
+    .oinp input{width: 80%;
+        background: none;border: 1px solid #d8d8d8;padding: 0.6rem;margin: 2rem 0;
+    }
+    #clo{color: whitesmoke;cursor: pointer;
+        padding: 0.4rem 0.8rem;background: #999;position: absolute;top: 10px;right: 20%;font-size:1.2rem;
+    }
+    .awrap{
+        max-width: 1200px;margin: 0 auto;
+    }
+    .bcont{
+        width: 80%;margin: auto;text-align: center;padding: 0.6rem 0;
+        color: #000;
+        font-size: 16px;
+    }
+    .ac-oul{
+        width: 80%;margin: auto;text-align: center;
+    }
+    .ac-oul li{
+        float: left;width: 30%;padding: 0.6rem 0;border: 1px solid #b9b9bb;margin-left: 1.0rem;margin-top: 0.6rem;
+        color: #000;
+        font-size: 16px;
+    }
+    .ait{
+        width: 50%;text-align: center;margin: auto;padding: 0.4rem 0;margin-top: 0.6rem;
+        color: #000;
+        font-size: 16px;
+    }
+    .otf{
+        width: 80%;margin: auto;
+    }
+    .otf input{
+        width: 50%;margin-left: 25%;border: 1px solid #b9b9bb;padding: 0.6rem 0;margin-top: 0.6rem;text-indent: 2rem;
+    }
+    .acomm{
+        width: 20%;border: 1px solid #b9b9bb;
+        margin: 0.5rem auto 0 auto;
+        text-align: center;padding: 0.4rem;
+        cursor: pointer;
+        color: #000;
+        font-size: 16px;
+    }
+    .anum{
+        width: 36%;margin: auto;text-align: center;padding: 0.6rem 0;
+        color: #bbbbbb;
+        font-size: 16px;
+    }
+    .close_login{
+        font-size: 40px;
+        padding: 5px 25px 0 0;
+        text-align: right;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1111;
+        cursor: pointer;
+        color: #000000;
+    }
+
+    /*search*/
+.conter{
+    max-width: 1200px;margin: 1rem auto;
+}
+.cf-l{
+    width: 60%;float: left;
+}
+.cf-l div{
+    float: left;
+}
+.tx{
+    width: 80%;border-bottom: 1px solid #b9b9bb;
+}
+.tx input{
+    width: 100%;padding: 0.8rem 0;border: none;font-size: 1.2rem;background: none;
+    text-indent: 1rem;
+}
+.cf-l div:last-child{
+    width: 10%;margin-top: 0.6rem;
+}
+.cf-r{
+    width: 30%;float: left;margin-left: 1rem;margin-top: 2rem;
+}
+.fm{
+    width: 100%;text-align: center;
+}
+.fm select{
+    padding: 0.6rem 0;font-size: 1.2rem;margin-top: 0.2rem;background: none;
+}
+
+.bt-l{
+    float: left;width: 30%;
+}
+.bt-r{
+    float: right;width: 60%;
+}
+.bti{
+    width: 100%;border-bottom: 1px solid #000000;text-align: center;
+}
+.sle{
+    width: 100%;font-size:1rem;text-indent: 1rem;
+}
+.f-info{
+    width: 100%;border-bottom: 1px solid #e6e6e6;margin-top: 0.6rem;cursor: pointer;
+}
+.fj{
+    width: 60%;float: left;padding: 0.2rem;
+}
+
+.clear:after{
+    content: "";height: 0;display: block;visibility: hidden;clear: both;
+}
+.with{
+    width: 100%;background: #333333;height: 5rem;
+}
+.log{
+    max-width: 1200px;margin: 0 auto;
+}
+.log-in{
+    width: 30%;
+    padding: 0.6rem 0;
+    float: left;
+}
+.log-r{
+    width: 60%;
+    float: right;
+    padding: 1.4rem 0;
+    cursor: pointer;
+}
+.log-r div{
+    float: right;
+    width: 5%;
+    margin-left: 0.4rem;
+}
+.c-all{
+    width: 100%;
+    position: relative;
+}
+.cf-oul{
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    text-indent: 1rem;
+    background-color: white;
+    opacity: 0.9;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s all;
+}
+.c-all:hover .cf-oul{
+    transition: 0.5s all;
+    height: 11rem;
+}
+.cf-oul li{
+    width: 100%;
+    padding: 0.4rem 0;
+    cursor: pointer;
+    font-size: 0.5rem;
+    border-bottom: 2px dotted #d1d1d1;
+}
+.lik{
+    width: 100%;position: relative;
+}
+.tk{text-indent: 0.6rem;
+    width: 60%;background: #cbcbcb;cursor: pointer;float: left;line-height:2rem;border-radius: 0.2rem;
+}
+.tk img{
+    display: block;float: right;margin-right: 01rem;margin-top: 0.4rem;
+}
+.tmg{
+    width: 30%;float: left;text-indent: 0.4rem;margin-top: 0.2rem;
+}
+.jia{
+    transition: .6s all;
+    position: absolute;top:52%;right:40%;color: #ff4656;font-size: 1.2rem;opacity: 0;
+}
+.search{
+    width: 100%;height: 100%;
+    overflow-y: auto;
+}
+
+
+/*f3_dashi*/
+.tip{
+    position: relative;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+.tip img{
+    position: absolute;
+    width:80%;
+    height: 100%;
+    transition: all 1s;
+}
+.tip img:first-child{
+    left: 0 !important;
+}
+.b-tip{
+    position: relative;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+.b-tip img{
+    position: absolute;
+    width:80%;
+    transition: all 1s;
+    display:block;
+}
+.b-tip img:first-child{
+    left: 0 !important;
+}
